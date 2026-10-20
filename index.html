@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FIONAH-MUTHONI-</title>
+
+<style>
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    background: #ffffff;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    background: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+
+/* =========================================================
+   PAGE TITLE
+   ========================================================= */
+
+.page-name {
+    width: 100%;
+
+    text-align: left;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    color: #0866c5;
+
+    line-height: 1;
+
+    margin-bottom: 10px;
+
+    transform: scaleX(0.88);
+    transform-origin: left center;
+}
+
+
+/* =========================================================
+   HEADER LINE
+   ========================================================= */
+
+.header-line {
+    width: 100%;
+    height: 1px;
+
+    background: #eeeeee;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   HEADER IMAGES
+
+   Replace:
+   header-left.png
+   header-right.png
+   ========================================================= */
+
+.logo-row {
+    width: 100%;
+    height: 82px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 8px;
+}
+
+.logo-left,
+.logo-right {
+    width: 48%;
+    height: 76px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* =========================================================
+   NAVIGATION BAR
+   ========================================================= */
+
+.navigation {
+    width: 100%;
+    height: 32px;
+
+    display: flex;
+    align-items: stretch;
+
+    margin-top: 10px;
+    margin-bottom: 35px;
+
+    overflow: hidden;
+
+    background: #4b66c5;
+}
+
+
+/* =========================================================
+   NAVIGATION TEXT
+   ========================================================= */
+
+.navigation-links {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 6px;
+
+    color: #ffffff;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 6px;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    transform: scaleX(0.88);
+    transform-origin: left center;
+}
+
+
+/* =========================================================
+   LANGUAGE BOX
+   ========================================================= */
+
+.language-box {
+    width: 45px;
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #eeeeee;
+
+    color: #3154a8;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 9px;
+
+    direction: rtl;
+}
+
+
+/* =========================================================
+   MAIN STATUS CONTAINER
+   ========================================================= */
+
+.status-container {
+    width: 100%;
+
+    padding: 0 10px;
+
+    text-align: center;
+
+    flex-grow: 1;
+}
+
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.status-badge-container {
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   CHECKMARK
+   ========================================================= */
+
+.checkmark-circle {
+    width: 60px;
+    height: 60px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 12px;
+
+    background: #2ecc71;
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 32px;
+    font-weight: bold;
+
+    transform: scaleX(0.65);
+    transform-origin: center;
+}
+
+
+/* =========================================================
+   STATUS TITLE
+   ========================================================= */
+
+.status-title {
+    display: block;
+
+    width: 172.414%;
+    margin-left: -36.207%;
+
+    margin-bottom: 16px;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 20px;
+
+    font-weight: normal;
+
+    line-height: 1.15;
+
+    color: #000000;
+
+    transform: scaleX(0.58);
+    transform-origin: center;
+}
+
+
+/* =========================================================
+   BLACK DIVIDER
+   ========================================================= */
+
+.divider-line {
+    width: 80%;
+
+    border: 0;
+    border-top: 3px solid #000000;
+
+    margin: 0 auto 28px;
+}
+
+
+/* =========================================================
+   DATA GROUP
+   ========================================================= */
+
+.data-group {
+    width: 100%;
+
+    margin-bottom: 27px;
+
+    text-align: center;
+
+    overflow: visible;
+}
+
+
+/* =========================================================
+   LABEL
+
+   HORIZONTALLY SQUEEZED TO 55%
+
+   This is the updated part.
+   ========================================================= */
+
+.data-label {
+    display: block;
+
+    width: 181.82%;
+    margin-left: -40.91%;
+
+    margin-bottom: 5px;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 16px;
+
+    font-weight: 400;
+
+    line-height: 1.15;
+
+    color: #333333;
+
+    letter-spacing: 0;
+
+    transform: scaleX(0.55);
+
+    transform-origin: center center;
+}
+
+
+/* =========================================================
+   VALUE
+
+   HORIZONTALLY SQUEEZED TO 55%
+
+   This is the updated part.
+   ========================================================= */
+
+.data-value {
+    display: block;
+
+    width: 181.82%;
+    margin-left: -40.91%;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    line-height: 1.10;
+
+    color: #000000;
+
+    letter-spacing: 0;
+
+    text-transform: uppercase;
+
+    transform: scaleX(0.55);
+
+    transform-origin: center center;
+
+    word-break: break-word;
+}
+
+
+/* =========================================================
+   QR SECTION
+   ========================================================= */
+
+.qr-section {
+    width: 100%;
+
+    margin: 25px 0 35px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =========================================================
+   QR TEXT
+   ========================================================= */
+
+.qr-title {
+    display: block;
+
+    width: 133.3333%;
+    margin-left: -16.66665%;
+
+    margin-bottom: 12px;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 15px;
+
+    font-weight: normal;
+
+    line-height: 1.15;
+
+    color: #333333;
+
+    transform: scaleX(0.75);
+
+    transform-origin: center;
+}
+
+
+/* =========================================================
+   QR IMAGE
+
+   Replace qr-code.png with your own image.
+   ========================================================= */
+
+.qr-image {
+    width: 120px;
+    height: 120px;
+
+    display: block;
+
+    object-fit: contain;
+
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.portal-footer {
+    width: 100%;
+    max-width: 420px;
+
+    padding: 12px 0;
+
+    margin-top: 40px;
+
+    text-align: center;
+
+    background: #3b5998;
+
+    color: #ffffff;
+
+    font-size: 11px;
+
+    border-top: 4px solid #a3b8cc;
+}
+
+
+/* =========================================================
+   FOOTER TEXT
+   ========================================================= */
+
+.footer-links {
+    display: inline-block;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 11px;
+
+    font-weight: normal;
+
+    line-height: 1.1;
+
+    word-spacing: 6px;
+
+    opacity: 0.9;
+
+    transform: scaleX(0.75);
+
+    transform-origin: center;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 500px) {
+
+    .page {
+        max-width: 420px;
+    }
+
+    .upper-header {
+        padding-top: 16px;
+    }
+
+    .page-name {
+        font-size: 20px;
+    }
+
+    .logo-row {
+        height: 78px;
+    }
+
+    .logo-left,
+    .logo-right {
+        height: 72px;
+    }
+
+    .navigation {
+        height: 32px;
+    }
+
+    .navigation-links {
+        font-size: 6px;
+    }
+
+    .data-label {
+        font-size: 16px;
+    }
+
+    .data-value {
+        font-size: 18px;
+    }
+
+    .sample-watermark {
+        font-size: 48px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+    .page-name {
+        font-size: 19px;
+    }
+
+    .logo-row {
+        height: 68px;
+    }
+
+    .logo-left,
+    .logo-right {
+        height: 62px;
+    }
+
+    .navigation {
+        height: 30px;
+    }
+
+    .navigation-links {
+        font-size: 5px;
+    }
+
+    .language-box {
+        width: 40px;
+        font-size: 8px;
+    }
+
+    .checkmark-circle {
+        width: 56px;
+        height: 56px;
+        font-size: 29px;
+    }
+
+    .status-title {
+        font-size: 19px;
+    }
+
+    .data-label {
+        font-size: 15px;
+    }
+
+    .data-value {
+        font-size: 17px;
+    }
+
+    .qr-image {
+        width: 105px;
+        height: 105px;
+    }
+
+    .sample-watermark {
+        font-size: 38px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+
+
+
+<div class="page">
+
+
+    <!-- ===================================================
+         UPPER SECTION
+         =================================================== -->
+
+    <div class="upper-header">
+
+
+        <!-- TITLE -->
+
+        <div class="page-name">
+            FIONAH-MUTHONI-
+        </div>
+
+
+        <!-- LINE -->
+
+        <div class="header-line"></div>
+
+
+        <!-- YOUR IMAGES -->
+
+        <div class="logo-row">
+
+            <img
+                src="header-left.png"
+                class="logo-left"
+               
+            >
+
+            <img
+                src="header-right.png"
+                class="logo-right"
+                
+            >
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <div class="navigation">
+
+            <div class="navigation-links">
+
+                Home |
+                Visa Information |
+                Application Status |
+                Contact |
+                Frequently Asked Questions |
+                Login
+
+            </div>
+
+            <div class="language-box">
+                العربية
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ===================================================
+         STATUS CONTENT
+         =================================================== -->
+
+    <div class="status-container">
+
+
+        <!-- STATUS -->
+
+        <div class="status-badge-container">
+
+            <div class="checkmark-circle">
+                ✓
+            </div>
+
+            <span class="status-title">
+                Visa is Active
+            </span>
+
+        </div>
+
+
+        <!-- DIVIDER -->
+
+        <div class="divider-line"></div>
+
+
+        
+
+        <div class="data-group">
+
+            <span class="data-label">
+                Visa Number
+            </span>
+
+            <span class="data-value">
+              
+            730373454
+            </span>
+
+        </div>
+
+
+        <!-- GIVEN NAME -->
+
+        <div class="data-group">
+
+            <span class="data-label">
+                Given Name
+            </span>
+
+            <span class="data-value">
+              FIONAH MUTHONI
+            </span>
+
+        </div>
+
+
+        <!-- FAMILY NAME -->
+
+        <div class="data-group">
+
+            <span class="data-label">
+                Family Name
+            </span>
+
+            <span class="data-value">
+               WAMBUGO
+            </span>
+
+        </div>
+
+
+        <!-- GENDER -->
+
+        <div class="data-group">
+
+            <span class="data-label">
+                Gender
+            </span>
+
+            <span class="data-value">
+                FEMALE
+            </span>
+
+        </div>
+
+
+        <!-- NATIONALITY -->
+
+        <div class="data-group">
+
+            <span class="data-label">
+                Nationality
+            </span>
+
+            <span class="data-value">
+                KENYA
+            </span>
+
+        </div>
+
+
+        <!-- TRAVEL DOCUMENT -->
+
+        <div class="data-group">
+
+            <span class="data-label">
+                Travel Document Number
+            </span>
+
+            <span class="data-value">
+                AK1447987
+            </span>
+
+        </div>
+
+
+        <!-- EXPIRY -->
+
+        <div class="data-group">
+
+            <span class="data-label">
+                Travel Document Expiry Date
+            </span>
+
+            <span class="data-value">
+               09-07-2033
+            </span>
+
+        </div>
+
+
+        <!-- OCCUPATION -->
+
+        <div class="data-group">
+
+            <span class="data-label">
+                Occupation
+            </span>
+
+            <span class="data-value">
+                DOMESTIC SERVANT
+            </span>
+
+        </div>
+
+
+       
+
+    </div>
+
+
+
+    <!-- ===================================================
+         FOOTER
+         =================================================== -->
+
+    <div class="portal-footer">
+
+        <div class="footer-links">
+
+            Copyright |
+            Privacy Policy |
+            Disclaimer |
+            Sitemap |
+            Terms and Conditions
+
+        </div>
+
+    </div>
+
+
+</div>
+
+</body>
+</html>
